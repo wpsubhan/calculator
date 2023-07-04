@@ -1,0 +1,98 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+	min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex{
+	display: flex;
+}
+
+.flex-column{
+	flex-direction: column;
+}
+
+.justify-content-end{
+	justify-content: end;
+}
+
+.align-items-center{
+	align-items: center;
+}
+
+.cal_body{
+    width: 350px;
+    max-width: 100%;
+    background-color: #0ebbb2;
+    border-radius: 12px;
+}
+
+.cal_screen{
+    height: 72px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 6px;
+    padding: 8px;
+}
+
+.cal_screen p.cal_input{
+    font-size: large;
+    line-height: 1em;
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+    overflow: auto;
+}
+
+.cal_screen p.cal_output{
+    min-height: 24px;
+    font-weight:600;
+}
+
+.cal_buttons{
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    margin: 6px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 8px;
+    padding: 8px;
+}
+
+.cal_buttons .upper_row{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto auto auto;
+	grid-column-start: 1;
+    grid-column-end: 6;
+    gap: 8px;
+}
+
+.cal_btn{
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    cursor: pointer;
+}
+.cal_btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.cal_btn.colored{
+    color: #0ebbb2;
+    font-weight: 700;
+    font-size: large;
+}
+.cal_btn.equal{
+    color: white;
+    background-color: #0ebbb2;
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="cal_body">
+        <div class="cal_screen d-flex flex-column justify-content-end">
+          <p
+            id="displayScreen_input"
+            class="cal_input d-flex align-items-center"
+          ></p>
+          <p
+            id="displayScreen_output"
+            class="cal_output d-flex justify-content-end align-items-center"
+          >
+            0
+          </p>
+        </div>
+
+        <div id="cal_buttons" class="cal_buttons">
+          <div class="upper_row">
+            <div
+              id="cal_exponent"
+              class="cal_btn scientific_btn"
+              onclick="displaychar('^')"
+            >
+              X <sup>y</sup>
+            </div>
+            <div
+              id="cal_sqrt"
+              class="cal_btn scientific_btn"
+              onclick="displaychar('sqrt(')"
+            >
+              &radic;X
+            </div>
+            <div
+              id="cal_round_start"
+              class="cal_btn scientific_btn"
+              onclick="displaychar('(')"
+            >
+              (
+            </div>
+            <div
+              id="cal_round_end"
+              class="cal_btn scientific_btn"
+              onclick="displaychar(')')"
+            >
+              )
+            </div>
+
+            <div
+              id="cal_sin"
+              class="cal_btn scientific_btn"
+              onclick="displaychar('sin(')"
+            >
+              sin
+            </div>
+            <div
+              id="cal_cos"
+              class="cal_btn scientific_btn"
+              onclick='displaychar("cos(")'
+            >
+              cos
+            </div>
+            <div
+              id="cal_tan"
+              class="cal_btn scientific_btn"
+              onclick="displaychar('tan(')"
+            >
+              tan
+            </div>
+          </div>
+
+          <div id="cal_seven" class="cal_btn" onclick="displaychar(7)">7</div>
+          <div id="cal_eight" class="cal_btn" onclick="displaychar(8)">8</div>
+          <div id="cal_nine" class="cal_btn" onclick="displaychar(9)">9</div>
+
+          <div id="cal_del" class="cal_btn colored" onclick="deleteChar()">
+            &#8678;
+          </div>
+          <div id="cal_clear" class="cal_btn colored" onclick="clearScreen()">
+            AC
+          </div>
+          <div id="cal_four" class="cal_btn" onclick="displaychar(4)">4</div>
+          <div id="cal_five" class="cal_btn" onclick="displaychar(5)">5</div>
+          <div id="cal_six" class="cal_btn" onclick="displaychar(6)">6</div>
+          <div
+            id="cal_multiply"
+            class="cal_btn colored"
+            onclick="displaychar('x')"
+          >
+            x
+          </div>
+          <div
+            id="cal_divide"
+            class="cal_btn colored"
+            onclick="displaychar('÷')"
+          >
+            &divide;
+          </div>
+          <div id="cal_one" class="cal_btn" onclick="displaychar(1)">1</div>
+          <div id="cal_two" class="cal_btn" onclick="displaychar(2)">2</div>
+          <div id="cal_three" class="cal_btn" onclick="displaychar(3)">3</div>
+          <div id="cal_add" class="cal_btn colored" onclick="displaychar('+')">
+            +
+          </div>
+          <div
+            id="cal_subtract"
+            class="cal_btn colored"
+            onclick="displaychar('-')"
+          >
+            -
+          </div>
+          <div id="cal_zero" class="cal_btn" onclick="displaychar(0)">0</div>
+          <div id="cal_point" class="cal_btn" onclick="displaychar('.')">.</div>
+          <div
+            id="cal_pi"
+            class="cal_btn scientific_btn"
+            onclick="displaychar('&pi;')"
+          >
+            &pi;
+          </div>
+          <div
+            id="cal_euler"
+            class="cal_btn scientific_btn"
+            onclick="displaychar('e')"
+          >
+            e
+          </div>
+          <div id="cal_equal" class="cal_btn equal" onclick="output()">=</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="src/calculator.js"></script>
+</html>
