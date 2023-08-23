@@ -11,14 +11,14 @@
     <div class="container">
       <div id="varAndConst" class="varAndConst">
         <div class="variable_header d-flex align-items-center justify-content-space-between">
-          <h2 onclick="console.log('Variables', user_variables, 'Constants', math_constants)">Variables and Constants</h2>
-          <button onclick="clear_variables()">Clear</button>
+          <h2 onclick="console.log('Variables', userVariables, 'Constants', mathConstants)">Variables and Constants</h2>
+          <button onclick="clearVariables()">Clear</button>
         </div>
         <div class="variable_view">
           <input id="variable_item_name" class="variable_item_name" type="text" oninput="validateInput(event)" placeholder="Name" required>
           <span>=</span>
           <input id="variable_item_value" class="variable_item_value" type="number" placeholder="Value" required>
-          <button id="variable_save_btn" onclick="save_variable()">Save</button>
+          <button id="variable_save_btn" onclick="saveVariable()">Save</button>
         </div>
         <div id="calculator_variables" class="calculator_variables"></div>
       </div>
@@ -43,28 +43,28 @@
               <div
                 id="cal_exponent"
                 class="cal_btn scientific_btn"
-                onclick="displaychar('^')"
+                onclick="displayChar('^')"
               >
                 X <sup>y</sup>
               </div>
               <div
                 id="cal_sqrt"
                 class="cal_btn scientific_btn"
-                onclick="displaychar('√')"
+                onclick="displayChar('√')"
               >
                 &radic;X
               </div>
               <div
                 id="cal_round_start"
                 class="cal_btn scientific_btn"
-                onclick="displaychar('(')"
+                onclick="displayChar('(')"
               >
                 (
               </div>
               <div
                 id="cal_round_end"
                 class="cal_btn scientific_btn"
-                onclick="displaychar(')')"
+                onclick="displayChar(')')"
               >
                 )
               </div>
@@ -72,29 +72,29 @@
               <div
                 id="cal_sin"
                 class="cal_btn scientific_btn"
-                onclick="displaychar('sin(')"
+                onclick="displayChar('sin(')"
               >
                 sin
               </div>
               <div
                 id="cal_cos"
                 class="cal_btn scientific_btn"
-                onclick='displaychar("cos(")'
+                onclick='displayChar("cos(")'
               >
                 cos
               </div>
               <div
                 id="cal_tan"
                 class="cal_btn scientific_btn"
-                onclick="displaychar('tan(')"
+                onclick="displayChar('tan(')"
               >
                 tan
               </div>
             </div>
   
-            <div id="cal_seven" class="cal_btn" onclick="displaychar(7)">7</div>
-            <div id="cal_eight" class="cal_btn" onclick="displaychar(8)">8</div>
-            <div id="cal_nine" class="cal_btn" onclick="displaychar(9)">9</div>
+            <div id="cal_seven" class="cal_btn" onclick="displayChar(7)">7</div>
+            <div id="cal_eight" class="cal_btn" onclick="displayChar(8)">8</div>
+            <div id="cal_nine" class="cal_btn" onclick="displayChar(9)">9</div>
   
             <div id="cal_del" class="cal_btn colored" onclick="deleteChar()">
               &#8678;
@@ -102,49 +102,49 @@
             <div id="cal_clear" class="cal_btn colored" onclick="clearScreen()">
               AC
             </div>
-            <div id="cal_four" class="cal_btn" onclick="displaychar(4)">4</div>
-            <div id="cal_five" class="cal_btn" onclick="displaychar(5)">5</div>
-            <div id="cal_six" class="cal_btn" onclick="displaychar(6)">6</div>
+            <div id="cal_four" class="cal_btn" onclick="displayChar(4)">4</div>
+            <div id="cal_five" class="cal_btn" onclick="displayChar(5)">5</div>
+            <div id="cal_six" class="cal_btn" onclick="displayChar(6)">6</div>
             <div
               id="cal_multiply"
               class="cal_btn colored"
-              onclick="displaychar('x')"
+              onclick="displayChar('x')"
             >
               x
             </div>
             <div
               id="cal_divide"
               class="cal_btn colored"
-              onclick="displaychar('÷')"
+              onclick="displayChar('÷')"
             >
               &divide;
             </div>
-            <div id="cal_one" class="cal_btn" onclick="displaychar(1)">1</div>
-            <div id="cal_two" class="cal_btn" onclick="displaychar(2)">2</div>
-            <div id="cal_three" class="cal_btn" onclick="displaychar(3)">3</div>
-            <div id="cal_add" class="cal_btn colored" onclick="displaychar('+')">
+            <div id="cal_one" class="cal_btn" onclick="displayChar(1)">1</div>
+            <div id="cal_two" class="cal_btn" onclick="displayChar(2)">2</div>
+            <div id="cal_three" class="cal_btn" onclick="displayChar(3)">3</div>
+            <div id="cal_add" class="cal_btn colored" onclick="displayChar('+')">
               +
             </div>
             <div
               id="cal_subtract"
               class="cal_btn colored"
-              onclick="displaychar('-')"
+              onclick="displayChar('-')"
             >
               -
             </div>
-            <div id="cal_zero" class="cal_btn" onclick="displaychar(0)">0</div>
-            <div id="cal_point" class="cal_btn" onclick="displaychar('.')">.</div>
+            <div id="cal_zero" class="cal_btn" onclick="displayChar(0)">0</div>
+            <div id="cal_point" class="cal_btn" onclick="displayChar('.')">.</div>
             <div
               id="cal_pi"
               class="cal_btn scientific_btn"
-              onclick="displaychar('π')"
+              onclick="displayChar('π')"
             >
               &pi;
             </div>
             <div
               id="cal_euler"
               class="cal_btn scientific_btn"
-              onclick="displaychar('_e')"
+              onclick="displayChar('_e')"
             >
               _e
             </div>
@@ -155,7 +155,7 @@
       <div class="history">
         <div class="history_header d-flex align-items-center justify-content-space-between">
           <h2 onclick="console.log(user_history)">History</h2>
-          <button onclick="clear_history()">Clear</button>
+          <button onclick="clearHistory()">Clear</button>
         </div>
         <div id="calculator_history" class="calculator_history"></div>
       </div>
